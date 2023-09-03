@@ -1,0 +1,63 @@
+.container{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.game-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+}
+
+.cell{
+    width: 100px;
+    height: 100px;
+    cursor: pointer; 
+}
+
+.cell:nth-child(2n+1){
+    background-color: green;
+}
+
+.cell:nth-child(2n){
+    background-color:lightgreen;
+}
+
+.reset{
+    margin-top: 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: lightgreen;
+
+}
+
+.win{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.cell-X::before{
+    content: "X";
+    font-size: 100px;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cell-O::before{
+    content: "O";
+    font-size: 100px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
